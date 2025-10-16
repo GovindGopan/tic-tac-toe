@@ -14,7 +14,6 @@ A simple Tic Tac Toe game with a vibrant GUI and point counting feature.
 
 ## Features
 
-*   Vibrant and attractive GUI
 *   Point counting for each player
 *   Dark and light mode toggle
 *   Reset button
