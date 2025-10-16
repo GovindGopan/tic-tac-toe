@@ -8,6 +8,7 @@
     --o-color: #0074d9;
     --button-background: #0074d9;
     --button-hover-background: #005ea2;
+    --theme-icon-color: #333;
 }
 
 .dark-mode {
@@ -20,6 +21,7 @@
     --o-color: #82b1ff;
     --button-background: #82b1ff;
     --button-hover-background: #6c9eda;
+    --theme-icon-color: #fff;
 }
 
 * {
@@ -47,31 +49,10 @@ body {
     transition: background-color 0.3s;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 h1 {
+    margin-bottom: 20px;
     font-size: 3em;
     color: var(--text-color);
-}
-
-.theme-switcher {
-    display: flex;
-    align-items: center;
-}
-
-#theme-toggle {
-    display: none;
-}
-
-#theme-toggle + label {
-    font-size: 1em;
-    color: var(--text-color);
-    cursor: pointer;
 }
 
 .game-board {
@@ -134,4 +115,25 @@ h1 {
 
 #resetButton:hover {
     background-color: var(--button-hover-background);
+}
+
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--container-background);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle i {
+    font-size: 1.5em;
+    color: var(--theme-icon-color);
 }
