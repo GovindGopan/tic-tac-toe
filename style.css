@@ -1,3 +1,27 @@
+:root {
+    --background-color: #f0f2f5;
+    --container-background: #fff;
+    --text-color: #333;
+    --cell-background: #ddd;
+    --cell-hover-background: #ccc;
+    --x-color: #ff4136;
+    --o-color: #0074d9;
+    --button-background: #0074d9;
+    --button-hover-background: #005ea2;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --container-background: #1e1e1e;
+    --text-color: #fff;
+    --cell-background: #333;
+    --cell-hover-background: #444;
+    --x-color: #ff8a80;
+    --o-color: #82b1ff;
+    --button-background: #82b1ff;
+    --button-hover-background: #6c9eda;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,25 +30,48 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: background-color 0.3s;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--container-background);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-    margin-bottom: 20px;
     font-size: 3em;
-    color: #333;
+    color: var(--text-color);
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+#theme-toggle + label {
+    font-size: 1em;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .game-board {
@@ -37,7 +84,7 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #ddd;
+    background-color: var(--cell-background);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -48,17 +95,17 @@ h1 {
 }
 
 .cell:hover {
-    background-color: #ccc;
+    background-color: var(--cell-hover-background);
 }
 
 .cell.x::before {
     content: 'X';
-    color: #ff4136;
+    color: var(--x-color);
 }
 
 .cell.o::before {
     content: 'O';
-    color: #0074d9;
+    color: var(--o-color);
 }
 
 .scoreboard {
@@ -70,7 +117,8 @@ h1 {
 .player-score {
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #f0f2f5;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #resetButton {
@@ -78,12 +126,12 @@ h1 {
     font-size: 1em;
     border: none;
     border-radius: 5px;
-    background-color: #0074d9;
+    background-color: var(--button-background);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #resetButton:hover {
-    background-color: #005ea2;
+    background-color: var(--button-hover-background);
 }
