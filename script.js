@@ -3,6 +3,7 @@ const board = document.querySelector('.game-board');
 const resetButton = document.getElementById('resetButton');
 const playerXScoreElement = document.getElementById('playerXScore');
 const playerOScoreElement = document.getElementById('playerOScore');
+const themeToggle = document.getElementById('theme-toggle');
 
 let isPlayerOTurn = false;
 let playerXScore = 0;
@@ -22,6 +23,9 @@ const WINNING_COMBINATIONS = [
 startGame();
 
 resetButton.addEventListener('click', startGame);
+themeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
 function startGame() {
     isPlayerOTurn = false;
