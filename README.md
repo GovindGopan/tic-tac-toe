@@ -2,7 +2,8 @@
 
 This is a classic Tic-Tac-Toe game that has been enhanced with a clean, modern user interface and a challenging, unbeatable AI opponent.
 
-![Tic-Tac-Toe Gameplay](https://i.imgur.com/your-screenshot.png) <!-- You can replace this with a screenshot of your game -->
+<img width="1920" height="952" alt="image" src="https://github.com/user-attachments/assets/c0fb8f84-e471-44cf-862a-f74b63575eca" />
+
 
 ## ✨ Features
 
