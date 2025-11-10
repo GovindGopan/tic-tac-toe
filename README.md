@@ -31,4 +31,3 @@ This is a classic Tic-Tac-Toe game that has been enhanced with a clean, modern u
 - **JavaScript (ES6+):** For the game logic, AI implementation, and DOM manipulation.
 
 ---
-*This project was significantly enhanced by the Gemini CLI.*
