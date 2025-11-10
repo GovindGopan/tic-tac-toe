@@ -1,19 +1,34 @@
-# Tic Tac Toe
+# Enhanced Tic-Tac-Toe with Unbeatable AI
 
-A simple Tic Tac Toe game with point counting feature and dark/light theme switch.
+This is a classic Tic-Tac-Toe game that has been enhanced with a clean, modern user interface and a challenging, unbeatable AI opponent.
 
-## How to Play
+![Tic-Tac-Toe Gameplay](https://i.imgur.com/your-screenshot.png) <!-- You can replace this with a screenshot of your game -->
 
-1.  Open the `index.html` file in your browser.
-2.  Player X starts the game.
-3.  Click on any cell to place your mark.
-4.  The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
-5.  If all 9 cells are filled and no one has 3 in a row, the game is a draw.
-6.  Click the "Reset" button to start a new game.
-7.  Click the moon/sun icon to toggle between dark and light mode.
+## ✨ Features
 
-## Features
+- **Two Game Modes:**
+  - **Player vs. AI:** Test your skills against an unbeatable AI opponent powered by the minimax algorithm.
+  - **Player vs. Player:** Enjoy the classic game with a friend.
+- **Modern & Responsive UI:** A clean, visually appealing interface with smooth animations that works on all screen sizes.
+- **Score Tracking:** Keeps track of wins for X, O, and ties.
+- **Sleek Animations:** Smooth animations for placing marks and celebrating a win.
+- **Theme Toggle:** Switch between a light and dark theme for comfortable viewing.
 
-*   Point counting for each player
-*   Dark and light mode toggle
-*   Reset button
+## 🚀 How to Play
+
+1.  **Open the Game:** Simply open the `index.html` file in your favorite web browser.
+2.  **Select a Game Mode:**
+    - Choose **Player vs. AI** to play against the computer.
+    - Choose **Player vs. Player** for a two-player game.
+3.  **Make Your Move:** Click on an empty square to place your mark.
+4.  **Win the Game:** The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins. The game is a draw if the board is full and no player has won.
+5.  **Reset:** Use the refresh button to start a new game at any time.
+
+## 🛠️ Technologies Used
+
+- **HTML5:** For the structure of the game.
+- **CSS3:** For modern styling, animations, and responsive design.
+- **JavaScript (ES6+):** For the game logic, AI implementation, and DOM manipulation.
+
+---
+*This project was significantly enhanced by the Gemini CLI.*
